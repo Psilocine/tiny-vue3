@@ -1,5 +1,9 @@
 # scheduler
 
+## 流程
+![flow](./assets/scheduler_flow.png)
+
+
 谈谈 constructor 参数里 scheduler 的修饰符，这节实现的逻辑如下
 ```typescript
 class ReactiveEffect {
