@@ -14,7 +14,6 @@ class ReactiveEffect {
 
   run() {
     if (!this.active) {
-      this.active = true; // ? 
       return this._fn();
     }
     // 应该收集
