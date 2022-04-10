@@ -25,3 +25,5 @@ effect 第二个参数 options 对象可以传入 onStop 函数，可以在外�
 ## trigger
 
 在 setter 的时候，通过 target 和 key 的唯一映射拿到依赖收集的 dep，触发每一个 ReactiveEffect 实例的 run 方法
+
+update(scheduler): 当 ReactiveEffect 实例有 scheduler 函数时，scheduler 函数代替 run 函数执行
