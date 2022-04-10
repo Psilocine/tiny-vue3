@@ -60,7 +60,6 @@ describe("effect", () => {
     expect(dummy).toBe(2);
   });
 
-
   it("stop", () => {
     let dummy;
     const obj = reactive({ prop: 1 });
