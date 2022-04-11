@@ -6,6 +6,7 @@ class RefImpl {
   private _value;
   private dep;
   private _rawValue: any;
+  public readonly __v_isRef = true;
   constructor(value) {
     this._value = convert(value);
     this._rawValue = value;
@@ -38,4 +39,13 @@ function trackRefValue(ref) {
   if (isTracking()) {
     trackEffects(ref.dep);
   }
+}
+
+
+export function isRef(ref) {
+  return !!ref.__v_isRef;
+}
+
+export function unref(ref) {
+  return isRef(ref) ? ref.value : ref;
 }

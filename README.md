@@ -27,7 +27,7 @@
 目标是用自己的 reactivity 支持现有的 demo 运行
 
 - [x] reactive 的实现
-- [ ] ref 的实现
+- [x] ref 的实现
 - [x] readonly 的实现
 - [ ] computed 的实现
 - [x] track 依赖收集
