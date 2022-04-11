@@ -1,3 +1,4 @@
+import { isObject } from "../shared";
 import {
   mutableHandlers,
   readonlyHandlers,
@@ -41,3 +42,11 @@ export function isReadonly(value) {
 export function isProxy(value) {
   return isReactive(value) || isReadonly(value);
 }
+
+export const toReactive = (value) => {
+  return isObject(value) ? reactive(value) : value;
+};
+
+export const toReadonly = (value) => {
+  return isObject(value) ? readonly(value) : value;
+};

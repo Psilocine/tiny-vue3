@@ -23,6 +23,7 @@
 - [x] 支持 shallowReactive
 - [x] 支持 isProxy
 - [x] ref 的实现
+- [x] 支持 shallowRef
 - [x] 支持 proxyRefs
 - [x] computed 的实现
 - [ ] 支持 toRaw

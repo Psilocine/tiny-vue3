@@ -7,8 +7,8 @@ class RefImpl {
   private dep;
   private _rawValue: any;
   public readonly __v_isRef = true;
-  constructor(value) {
-    this._value = convert(value);
+  constructor(value, public readonly __v_isShallow) {
+    this._value = __v_isShallow ? value : convert(value);
     this._rawValue = value;
     this.dep = new Set();
   }
@@ -20,15 +20,26 @@ class RefImpl {
 
   set value(newValue) {
     if (hasChanged(this._rawValue, newValue)) {
-      this._value = convert(newValue);
+      this._value = this.__v_isShallow ? newValue : convert(newValue);
       this._rawValue = newValue;
       triggerEffects(this.dep);
     }
   }
 }
 
+function createRef(rawValue: unknown, shallow:boolean) {
+  if (isRef(rawValue)) {
+    return rawValue
+  }
+  return new RefImpl(rawValue, shallow);
+}
+
 export function ref(value) {
-  return new RefImpl(value);
+  return createRef(value, false);
+}
+
+export function shallowRef(value) {
+  return createRef(value, true);
 }
 
 function convert(value) {
