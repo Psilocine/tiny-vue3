@@ -5,7 +5,7 @@ import { effect } from "../effect";
 describe("shallowRef", () => {
   test("should not make non-reactive properties reactive", () => {
     let dummy: any;
-    const props = shallowRef({ foo: 1 });
+    const props: any = shallowRef({ foo: 1 });
 
     effect(() => {
       dummy = props.value.foo || "can't find";

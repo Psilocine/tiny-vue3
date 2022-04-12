@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add rollup --dev
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/psilolau/.cargo/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.22.6
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/psilolau/Library/Caches/Yarn/v6/npm-ansi-styles-3.2.1-41fbb20243e50b12be0f04b8dedbf07520ce841d-integrity/node_modules/ansi-styles/readme.md' -> '/Users/psilolau/Desktop/workspace/LOCAL/mini-vue-psilo/node_modules/@babel/highlight/node_modules/ansi-styles/readme.md'
+
+npm manifest: 
+  {
+    "name": "tiny-vue3",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "keywords": ["vue3", "vue", "simplify vue", "mini vue", "tiny vue"],
+    "author": "psilolau@foxmail.com",
+    "license": "MIT",
+    "devDependencies": {
+      "@babel/core": "^7.17.8",
+      "@babel/preset-env": "^7.16.11",
+      "@babel/preset-typescript": "^7.16.7",
+      "@types/jest": "^27.4.1",
+      "babel-jest": "^27.5.1",
+      "jest": "^27.5.1",
+      "typescript": "^4.6.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
