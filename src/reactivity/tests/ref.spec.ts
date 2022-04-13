@@ -3,12 +3,12 @@ import { reactive } from "../reactive";
 import { ref, isRef, unref, proxyRefs } from "../ref";
 describe("ref", () => {
   it("happy path", () => {
-    const a = ref(1);
+    const a: any = ref(1);
     expect(a.value).toBe(1);
   });
 
   it("should be reactive", () => {
-    const a = ref(1);
+    const a:any = ref(1);
     let dummy;
     let calls = 0;
     effect(() => {
@@ -27,7 +27,7 @@ describe("ref", () => {
   });
 
   it("should make nested properties reactive", () => {
-    const a = ref({
+    const a:any = ref({
       count: 1,
     });
     let dummy;
@@ -57,7 +57,7 @@ describe("ref", () => {
 
 
   it("proxyRefs", () => {
-    const user = {
+    const user: any = {
       age: ref(10),
       name: "xiaohong",
     };
