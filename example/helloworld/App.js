@@ -10,6 +10,9 @@ export const App = {
       {
         id: "root",
         class: ["red", "hard"],
+        onClick() {
+          console.log("click");
+        },
       },
       // setupState
       // this.$el
