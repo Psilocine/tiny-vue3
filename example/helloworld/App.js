@@ -1,4 +1,4 @@
-import { h } from "../../lib/mini-vue.esm.js";
+import { h } from "../../lib/tiny-vue3.esm.js";
 
 export const App = {
   render() {
@@ -9,16 +9,18 @@ export const App = {
         id: "root",
         class: ["red", "hard"],
       },
-      // "hi, " + this.msg
+      // setupState
+      // this.$el
+      "hi, " + this.msg
       // string
-      // "hi, mini-vue"
+      // "hi, tiny-vue3"
       // Array
-      [h("p", { class: "red" }, "hi"), h("p", { class: "blue" }, "mini-vue")]
+      // [h("p", { class: "red" }, "hi"), h("p", { class: "blue" }, "tiny-vue3")]
     );
   },
   setup() {
     return {
-      msg: "mini-vue",
+      msg: "tiny-vue3-haha",
     };
   },
 };

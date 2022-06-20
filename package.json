@@ -2,8 +2,8 @@
   "name": "tiny-vue3",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/mini-vue.cjs.js",
-  "module": "lib/mini-vue.esm.js",
+  "main": "lib/tiny-vue3.cjs.js",
+  "module": "lib/tiny-vue3.esm.js",
   "scripts": {
     "test": "jest",
     "build": "rollup -c rollup.config.js"

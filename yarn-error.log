@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: ENOENT: no such file or directory, copyfile '/Users/psilolau/Library/Caches/Yarn/v6/npm-ansi-styles-3.2.1-41fbb20243e50b12be0f04b8dedbf07520ce841d-integrity/node_modules/ansi-styles/readme.md' -> '/Users/psilolau/Desktop/workspace/LOCAL/mini-vue-psilo/node_modules/@babel/highlight/node_modules/ansi-styles/readme.md'
+  Error: ENOENT: no such file or directory, copyfile '/Users/psilolau/Library/Caches/Yarn/v6/npm-ansi-styles-3.2.1-41fbb20243e50b12be0f04b8dedbf07520ce841d-integrity/node_modules/ansi-styles/readme.md' -> '/Users/psilolau/Desktop/workspace/LOCAL/tiny-vue3-psilo/node_modules/@babel/highlight/node_modules/ansi-styles/readme.md'
 
 npm manifest: 
   {

@@ -1,4 +1,4 @@
-import { isObject } from "../shared/index";
+import { isObject } from "../shared";
 import { createComponentInstance, setupComponent } from "./component";
 
 export function render(vnode, container) {
@@ -25,13 +25,13 @@ function mountElement(vnode: any, container: any) {
 
   const { children, props } = vnode;
 
-  if (typeof children === 'string') {
+  if (typeof children === "string") {
     el.textContent = children;
   } else if (Array.isArray(children)) {
     mountChildren(vnode, el);
   }
   for (const key in props) {
-    const val = props[key]
+    const val = props[key];
     el.setAttribute(key, val);
   }
 
@@ -44,11 +44,9 @@ function mountChildren(vnode: any, container: any) {
   });
 }
 
-
 function processComponent(vnode, container) {
   mountComponent(vnode, container);
 }
-
 
 function mountComponent(vnode: any, container) {
   const instance = createComponentInstance(vnode);
@@ -58,10 +56,10 @@ function mountComponent(vnode: any, container) {
 }
 
 function setupRenderEffect(instance: any, container) {
-  const subTree = instance.render();
+  const { proxy } = instance;
+  const subTree = instance.render.call(proxy);
 
   // vnode -> patch
   // vnode -> element -> mountElement
   patch(subTree, container);
 }
-

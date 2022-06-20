@@ -1,7 +1,7 @@
 # computed
 
 ## 流程
-!(流程)[./assets/computed_flow.png]
+![流程](./assets/computed_flow.png)
 
 computed 计算属性的特征就是缓存，在 get value 的时候才去考虑是否需要更新值。
 keypiont 是 ReactiveEffect 类传入 scheduler 函数代替 getter 函数执行，
