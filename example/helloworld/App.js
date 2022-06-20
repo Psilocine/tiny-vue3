@@ -22,7 +22,7 @@ export const App = {
   },
   setup() {
     return {
-      msg: "tiny-vue3-haha",
+      msg: "tiny-vue3-haha22",
     };
   },
 };

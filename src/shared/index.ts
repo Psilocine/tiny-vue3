@@ -6,4 +6,4 @@ export const isObject = (value) => {
 
 export const hasChanged = (val, newValue) => {
   return !Object.is(val, newValue);
-}
+};
