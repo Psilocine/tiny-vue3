@@ -1,7 +1,9 @@
 import { h } from "../../lib/tiny-vue3.esm.js";
 
+window.self = null;
 export const App = {
   render() {
+    window.self = this;
     // ui
     return h(
       "div",
