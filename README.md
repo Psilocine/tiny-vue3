@@ -38,7 +38,7 @@
 - [x] 可以在 render 函数中获取 setup 返回的对象
 - [ ] nextTick 的实现
 - [x] 支持 getCurrentInstance
-- [ ] 支持 provide/inject
+- [x] 支持 provide/inject
 - [x] 支持最基础的 slots
 - [x] 支持 Fragment 类型节点
 - [x] 支持 Text 类型节点
