@@ -28,6 +28,10 @@ export function shallowReadonly(raw) {
 }
 
 function createReactiveObject(target, baseHandlerss) {
+  if (!isObject(target)) {
+    console.warn(`target ${target} 必须是一个对象`);
+    return target;
+  }
   return new Proxy(target, baseHandlerss);
 }
 

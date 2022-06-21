@@ -1,4 +1,5 @@
 import { h } from "../../lib/tiny-vue3.esm.js";
+import { Foo } from "./Foo.js";
 
 window.self = null;
 export const App = {
@@ -16,7 +17,12 @@ export const App = {
       },
       // setupState
       // this.$el
-      "hi, " + this.msg
+      [
+        h("div", {}, "hi, " + this.msg),
+        h(Foo, {
+          count: 1,
+        }),
+      ]
       // string
       // "hi, tiny-vue3"
       // Array
