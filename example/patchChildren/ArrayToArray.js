@@ -114,24 +114,24 @@ import { ref, h } from "../../lib/tiny-vue3.esm.js";
 // a,b,(c,e,d),f,g
 // a,b,(e,c),f,g
 // 中间部分，老的比新的多， 那么多出来的直接就可以被干掉(优化删除逻辑)
-const prevChildren = [
-  h("p", { key: "A" }, "A"),
-  h("p", { key: "B" }, "B"),
-  h("p", { key: "C", id: "c-prev" }, "C"),
-  h("p", { key: "E" }, "E"),
-  h("p", { key: "D" }, "D"),
-  h("p", { key: "F" }, "F"),
-  h("p", { key: "G" }, "G"),
-];
+// const prevChildren = [
+//   h("p", { key: "A" }, "A"),
+//   h("p", { key: "B" }, "B"),
+//   h("p", { key: "C", id: "c-prev" }, "C"),
+//   h("p", { key: "E" }, "E"),
+//   h("p", { key: "D" }, "D"),
+//   h("p", { key: "F" }, "F"),
+//   h("p", { key: "G" }, "G"),
+// ];
 
-const nextChildren = [
-  h("p", { key: "A" }, "A"),
-  h("p", { key: "B" }, "B"),
-  h("p", { key: "E" }, "E"),
-  h("p", { key: "C", id:"c-next" }, "C"),
-  h("p", { key: "F" }, "F"),
-  h("p", { key: "G" }, "G"),
-];
+// const nextChildren = [
+//   h("p", { key: "A" }, "A"),
+//   h("p", { key: "B" }, "B"),
+//   h("p", { key: "E" }, "E"),
+//   h("p", { key: "C", id:"c-next" }, "C"),
+//   h("p", { key: "F" }, "F"),
+//   h("p", { key: "G" }, "G"),
+// ];
 
 // 2 移动 (节点存在于新的和老的里面，但是位置变了)
 
@@ -210,19 +210,19 @@ const nextChildren = [
 // ];
 
 // fix c 节点应该是 move 而不是删除之后重新创建的
-// const prevChildren = [
-//   h("p", { key: "A" }, "A"),
-//   h("p", {}, "C"),
-//   h("p", { key: "B" }, "B"),
-//   h("p", { key: "D" }, "D"),
-// ];
+const prevChildren = [
+  h("p", { key: "A" }, "A"),
+  h("p", {}, "C"),
+  h("p", { key: "B" }, "B"),
+  h("p", { key: "D" }, "D"),
+];
 
-// const nextChildren = [
-//   h("p", { key: "A" }, "A"),
-//   h("p", { key: "B" }, "B"),
-//   h("p", {}, "C"),
-//   h("p", { key: "D" }, "D"),
-// ];
+const nextChildren = [
+  h("p", { key: "A" }, "A"),
+  h("p", { key: "B" }, "B"),
+  h("p", {}, "C"),
+  h("p", { key: "D" }, "D"),
+];
 
 export default {
   name: "ArrayToArray",

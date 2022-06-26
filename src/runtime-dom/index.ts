@@ -24,6 +24,7 @@ function insert(child, parent, anchor) {
 }
 
 function remove(child) {
+  console.log("remove ----------", child);
   const parent = child.parentNode;
 
   if (parent) {
