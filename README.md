@@ -36,7 +36,7 @@
 - [x] 支持 component emit
 - [x] 支持 proxy
 - [x] 可以在 render 函数中获取 setup 返回的对象
-- [ ] nextTick 的实现
+- [x] nextTick 的实现
 - [x] 支持 getCurrentInstance
 - [x] 支持 provide/inject
 - [x] 支持最基础的 slots
