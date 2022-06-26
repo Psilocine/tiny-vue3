@@ -52,4 +52,4 @@
 
 ### runtime-dom
 
-- [ ] 支持 custom renderer
+- [x] 支持 custom renderer
