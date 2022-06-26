@@ -1,9 +1,9 @@
 import { NodeTypes } from "../src/ast";
 import { baseParse } from "../src/parse";
 
-describe('Parse', () => {
-  describe('interpolation', () => {
-    test('simple interpolation', () => {
+describe("Parse", () => {
+  describe("interpolation", () => {
+    test("simple interpolation", () => {
       const ast = baseParse("{{ message }}");
 
       // root
@@ -11,9 +11,21 @@ describe('Parse', () => {
         type: NodeTypes.INTERPOLATION,
         content: {
           type: NodeTypes.SIMPLE_EXPRESSION,
-          content: "message"
-        }
-      })
+          content: "message",
+        },
+      });
+    });
+  });
+});
+
+describe("element", () => {
+  test("simple element div", () => {
+    const ast = baseParse("<div></div>");
+
+    // root
+    expect(ast.children[0]).toStrictEqual({
+      type: NodeTypes.ELEMENT,
+      tag: "div",
     });
   });
 });
