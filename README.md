@@ -47,8 +47,8 @@
 ### compiler-core
 
 - [x] 解析插值
-- [ ] 解析 element
-- [ ] 解析 text
+- [x] 解析 element
+- [x] 解析 text
 
 ### runtime-dom
 
