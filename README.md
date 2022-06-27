@@ -49,6 +49,8 @@
 - [x] 解析插值
 - [x] 解析 element
 - [x] 解析 text
+- [ ] 支持 transform
+- [ ] 支持 compiler
 
 ### runtime-dom
 
