@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`codegen element: 
+"const { createElementVNode: _createElementVNode } = Vue
+return function render(_ctx, _cache){return }"
+ 1`] = `
+"const { createElementVNode: _createElementVNode } = Vue
+return function render(_ctx, _cache){return _createElementVNode(\\"div\\"), null, 'hi,' + _toDisplayString(message))}"
+`;

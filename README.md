@@ -2,7 +2,7 @@
 
 基于 TDD 实现 vue3 模型简易版本，用于深入学习 vue3，理清 vue3 的核心逻辑
 
-`note` 目录下为学习笔记，用于加深各个环节 keypoint 的印象
+`note` 目录下为学习笔记，用于加深各个环节 key point 的印象
 
 ### Tasking
 
@@ -53,3 +53,8 @@
 ### runtime-dom
 
 - [x] 支持 custom renderer
+
+### monorepo & vitest
+
+- [x] pnpm monorepo 改造
+- [x] vitest 替换 jest
