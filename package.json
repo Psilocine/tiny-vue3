@@ -2,6 +2,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "A tiny vue3 library.",
+  "author": "psilolau@foxmail.com",
   "scripts": {
     "test": "vitest",
     "build": "rollup -c rollup.config.js"
@@ -13,8 +14,6 @@
     "mini vue",
     "tiny vue"
   ],
-  "author": "psilolau@foxmail.com",
-  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
@@ -27,5 +26,6 @@
   },
   "dependencies": {
     "@types/jest": "^29.0.3"
-  }
+  },
+  "license": "MIT"
 }

@@ -1,60 +1,68 @@
-### Goal
+<h1 align="center">tiny vue3</h1>
 
-基于 TDD 实现 vue3 模型简易版本，用于深入学习 vue3，理清 vue3 的核心逻辑
+<br>
 
-`note` 目录下为学习笔记，用于加深各个环节 key point 的印象
+**English** | [中文](./README.zh-CN.md)
 
-### Tasking
+<br>
 
-#### reactivity
+### Overview
 
-目标是用自己的 reactivity 支持现有的 demo 运行
+Tiny version of the Vue3 based on TDD, in order to learning deeply Vue3 and clarify the core logic 
 
-- [x] reactive 的实现
-- [x] 支持 effect.scheduler
-- [x] 支持 effect.stop
-- [x] track 依赖收集
-- [x] trigger 触发依赖
-- [x] readonly 的实现
-- [x] 支持 isReactive
-- [x] 支持 isReadonly
-- [x] 支持嵌套 reactive
-- [x] 支持 shallowReadonly
-- [x] 支持 shallowReactive
-- [x] 支持 isProxy
-- [x] ref 的实现
-- [x] 支持 shallowRef
-- [x] 支持 proxyRefs
-- [x] computed 的实现
+### Feature
 
-#### runtime-core
+**reactivity**
 
-- [x] 支持组件类型
-- [x] 支持 element 类型
-- [x] 初始化 props
-- [x] setup 可获取 props 和 context
-- [x] 支持 component emit
-- [x] 支持 proxy
-- [x] 可以在 render 函数中获取 setup 返回的对象
-- [x] nextTick 的实现
-- [x] 支持 getCurrentInstance
-- [x] 支持 provide/inject
-- [x] 支持最基础的 slots
-- [x] 支持 Fragment 类型节点
-- [x] 支持 Text 类型节点
-- [x] 支持 $el api
+- [x] implement reactive
+- [x] effect.scheduler
+- [x] effect.stop
+- [x] track dependency collection
+- [x] trigger triggering dependencies
+- [x] implement readonly
+- [x] isReactive
+- [x] isReadonly
+- [x] nested reactive
+- [x] shallowReadonly
+- [x] shallowReactive
+- [x] isProxy
+- [x] implement ref
+- [x] shallowRef
+- [x] proxyRefs
+- [x] implement computed
 
-### compiler-core
+**runtime-core**
 
-- [x] 解析插值
-- [x] 解析 element
-- [x] 解析 text
+- [x] component type
+- [x] element type
+- [x] props
+- [x] props 和 context
+- [x] component emit
+- [x] proxy
+- [x] setup
+- [x] nextTick
+- [x] getCurrentInstance
+- [x] provide/inject
+- [x] slots
+- [x] Fragment node component
+- [x] Text node component
+- [x] $el
 
-### runtime-dom
+**compiler-core**
 
-- [x] 支持 custom renderer
+- [x] parse slots
+- [x] parse element
+- [x] parse text
 
-### monorepo & vitest
+**runtime-dom**
 
-- [x] pnpm monorepo 改造
-- [x] vitest 替换 jest
+- [x] custom renderer
+
+**monorepo & vitest**
+
+- [x] refactor by pnpm monorepo
+- [x] vitest replace jest
+
+### License
+
+Tiny-vue3 is [MIT licensed](./LICENSE).
